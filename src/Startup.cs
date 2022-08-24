@@ -27,7 +27,7 @@ namespace Megaman
             
             services.AddControllers();
 
-            services.AddScoped<IRobotRepository, SqlRobotRepository>();
+            services.AddScoped<IRobotRepository, MockRobotRepository>();
             services.AddScoped<IRobotServices, RobotServices>();
         }
 
